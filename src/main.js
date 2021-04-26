@@ -1,0 +1,23 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import store from './store';
+import 'lib-flexible';
+import { Button, Tabbar, TabbarItem, NavBar, List, Search, Cell, Lazyload, Image,  Tab, Tabs } from 'vant';
+import 'vant/lib/index.css';
+import router from './router/index';
+import './index.css';
+const app = createApp(App);
+app.use(Button);
+app.use(Tabbar);
+app.use(TabbarItem);
+app.use(NavBar);
+app.use(List);
+app.use(Search);
+app.use(Cell);
+app.use(Tab);
+app.use(Tabs);
+app.use(Lazyload);
+app.use(Image);
+app.use(store);
+app.use(router);
+app.mount('#app')
